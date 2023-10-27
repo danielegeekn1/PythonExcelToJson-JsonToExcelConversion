@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+	<body>
+		<h1>Carica un file Excel</h1>
+		<form action="/upload" method="post" enctype="multipart/form-data">
+			<input type="file" name="excel_file" accept=".xlsx" />
+			<input type="submit" value="Carica e Converti il Json in Excel" />
+		</form>
+
+		<h1>Carica un file JSON</h1>
+		<form action="/json_to_excel" method="post" enctype="multipart/form-data">
+			<input type="file" name="json_file" accept=".json" />
+			<input type="submit" value="Carica e Converti in Excel il file JSON" />
+		</form>
+	</body>
+</html>
